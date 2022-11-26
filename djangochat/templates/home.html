@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+
+
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>ClubStop</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="agen" />
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  {% load static%}
+  <link rel="stylesheet" href="{%static 'plugins/bootstrap/bootstrap.min.css'%}">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="{%static 'plugins/slick/slick.css'%}">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="{%static 'plugins/themify-icons/themify-icons.css'%}">
+  <!-- venobox css -->
+  <link rel="stylesheet" href="{%static 'plugins/venobox/venobox.css'%}">
+  <!-- card slider -->
+  <link rel="stylesheet" href="{%static 'plugins/card-slider/css/style.css'%}">
+
+  <!-- Main Stylesheet -->
+  <link href="{%static 'css/style.css'%}" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="{%static 'images/favicon.ico'%}" type="image/x-icon">
+  <link rel="icon" href="{%static 'images/favicon.ico'%}" type="image/x-icon">
+  <style type="text/css">
+    .owl-carousel{
+      max-width: 75vw;
+      position: relative;
+      margin: auto;
+      text-align: center;
+    }
+    .owl-dots{
+      display: none;
+    }
+    .owl-nav{
+      display: none;
+    }
+    .feature_item {
+      background: #ffffff;
+      box-shadow: 1px 1px 25px 0 rgb(0 0 0 / 10%);
+      border-radius: 15px;
+      padding: 20px 25px;
+      height: 50vh;
+      transition: all .4s ease-in-out;
+      margin: 20px auto;
+  }
+  .feature_title{
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+  }
+  </style>
+
+</head>
+
+<body>
+  
+
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">ClubStop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Events</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Clubs</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="http://www.gvpcenss.org/">NSS GVPCE</a>
+            <a class="dropdown-item" href="https://racgvp.com/home">RAC GVP</a>
+            <a class="dropdown-item" href="">Vidyadaan</a>
+            <a class="dropdown-item" href="">GDSC GVP</a>
+            <a class="dropdown-item" href="https://ieeesbgvpce.org/?i=1">IEEE GVP</a>
+              </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/register">SignUp</a>
+        </li>
+        
+       
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- banner -->
+<section class="banner bg-cover position-relative d-flex justify-content-center align-items-center"
+  data-background="{%static 'images/banner/banner.jpg' %}">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="display-1 text-white font-weight-bold font-primary" style="font-size: 40px;">Clubstop <br/> One Stop solution to all your clubs</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /banner -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h2 class="section-title">My Clubs</h2>
+        <div class="section-border"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card hover-bg-secondary shadow py-4 active">
+          <div class="card-body text-center">
+            <div class="position-relative">
+              <img src="{%static 'images/NSS_LOGO.png'%}"/>
+            </div>
+            <h4 class="mb-4">NSS GVPCE(A)</h4>
+            <!--<p>Communication platform between club members</p>-->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card hover-bg-secondary shadow py-4">
+          <div class="card-body text-center">
+            <div class="position-relative">
+              <img src="{%static 'images/RAC_GVP.webp'%}"/>
+            </div>
+            <h4 class="mb-4">Rotaract (RAC GVP)</h4>
+            <!--<p>Authentication by Club members</p>-->
+          </div>
+        </div>
+      </div>
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h2 class="section-title">All Clubs</h2>
+        
+        <div class="section-border"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card hover-bg-secondary shadow py-4 active">
+          <div class="card-body text-center">
+            <div class="position-relative">
+              <img src="{%static 'images/NSS_LOGO.png'%}"/>
+            </div>
+            <h4 class="mb-4">NSS GVPCE(A)</h4>
+            <!--<p>Communication platform between club members</p>-->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card hover-bg-secondary shadow py-4">
+          <div class="card-body text-center">
+            <div class="position-relative">
+              <img src="{%static 'images/RAC_GVP.webp'%}"/>
+            </div>
+            <h4 class="mb-4">Rotaract (RAC GVP)</h4>
+            <!--<p>Authentication by Club members</p>-->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card hover-bg-secondary shadow py-4">
+          <div class="card-body text-center">
+            <div class="position-relative">
+              <img style="height:160px;" src="{%static 'images/Vidyadaan.jpg'%}"/>
+            </div>
+            <h4 class="mb-4">Vidyadaan</h4>
+            <!--<p>Schedules and mail remainders</p>-->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card hover-bg-secondary shadow py-4">
+          <div class="card-body text-center">
+            <div class="position-relative">
+              <img style="width:20vw; height:120px;" src="{%static 'images/GDSC.svg'%}"/>
+            </div>
+            <h4 class="mb-4">GDSC GVP</h4>
+            <!--<p>Authentication by Club members</p>-->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card hover-bg-secondary shadow py-4">
+          <div class="card-body text-center">
+            <div class="position-relative">
+              <img style="height:120px; width:120px" src="{%static 'images/ieee_sb_logo.png'%}"/>
+            </div>
+            <h4 class="mb-4">IEEE SB GVPCE</h4>
+            <!--<p>Authentication by Club members</p>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto text-center">
+          <h2 class="section-title">Latest Events</h2>
+          
+          <div class="section-border"></div>
+        </div>
+      </div>
+      
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card" style="width: 100rem;">
+                <img style="height:50vh;width:50vw;" class="card-img-top" src="{%static 'images/testimonial/azadieventpic.jpg'%}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 100rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 100rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      </div>
+    </div>
+  </section>
+<!-- service -->
+
+<!-- /team -->
+<!--
+<section class="section">
+  <div class="latest-events" style="margin-bottom: 2rem; margin-top:30px">
+
+    <h1 class="text-center" style="color: #063258;">Latest Events</h1>
+    <hr class="underline" style="width:5em;height:2px;">
+
+    <div class="owl-carousel owl-theme container">
+
+
+        <div class="feature_item text-center">
+            <img src="images/testimonial/azadieventpic.jpg" style="width: 100%;" alt="">
+            <h3 class="feature_title">Azadi Ka Amrit Mahotsav</h3>
+            <p class="feature_text"></p>
+            <a href="https://drive.google.com/file/d/1mrw6ceEn46-zC27z6zUp2EqRc5QWqZYC/view?usp=sharing" target="_blank"><button type="button"
+                    class="btn btn-outline-info">Know More</button></a>
+        </div>
+        <div class="feature_item text-center">
+            <img src="images/testimonial/vanmahotsavpic.jpg" style="width: 100%;" alt="">
+            <h3 class="feature_title">Vanmahotsav Event</h3>
+            
+            <a href="https://drive.google.com/file/d/1iSrLn30xXoibPlvHZpN8N4_mFYZou-R1/view?usp=sharing" target="_blank"><button type="button"
+                    class="btn btn-outline-info">Know More</button></a>
+        </div>
+        <div class="feature_item text-center">
+            <img src="images/testimonial/dishaapp event.jpg" style="width: 100%;" alt="">
+            <h3 class="feature_title">Disha App Sensitization</h3>
+            
+            <a href="https://drive.google.com/file/d/1uykITn7L2SSJirhfVVl1HkMD2Xz3or53/view?usp=sharing" target="_blank"><button type="button"
+                    class="btn btn-outline-info">Know More</button></a>
+        </div>
+        <div class="feature_item text-center">
+            <img src="images/testimonial/beacheventpic.jpg" style="width: 100%;" alt="">
+            <h3 class="feature_title">Beach Event</h3>
+            
+            <a href="https://drive.google.com/file/d/1mrw6ceEn46-zC27z6zUp2EqRc5QWqZYC/view?usp=sharing" target="_blank"><button type="button"
+                    class="btn btn-outline-info">Know More</button></a>
+        </div>
+    
+        <div class="feature_item text-center">
+            <img src="images/testimonial/yogadayeventpic.jpg" style="width: 100%;" alt="">
+            <h3 class="feature_title">Offline Yoga Event</h3>
+        
+            <a href="https://drive.google.com/file/d/1qmDLlsyPhOBgnueao0RIZkIV1ynMGHR-/view?usp=sharing" target="_blank"><button type="button"
+                    class="btn btn-outline-info">Know More</button></a>
+        </div>
+                
+    </div>
+
+</div>
+</section>
+-->
+
+
+<!-- jQuery -->
+<script src="{%static 'plugins/jQuery/jquery.min.js'%}"></script>
+<!-- Bootstrap JS -->
+<script src="{%static 'plugins/bootstrap/bootstrap.min.js'%}"></script>
+<!-- slick slider -->
+<script src="{%static 'plugins/slick/slick.min.js'%}"></script>
+<!-- venobox -->
+<script src="{%static 'plugins/venobox/venobox.min.js'%}"></script>
+<!-- shuffle -->
+<script src="{%static 'plugins/shuffle/shuffle.min.js'%}"></script>
+<!-- apear js -->
+<script src="{%static 'plugins/counto/apear.js'%}"></script>
+<!-- counter -->
+<script src="{%static 'plugins/counto/counTo.js'%}"></script>
+<!-- card slider -->
+<script src="{%static 'plugins/card-slider/js/card-slider-min.js'%}"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+<script src="{%static 'plugins/google-map/gmap.js'%}"></script>
+
+<!-- Main Script -->
+<script src="{%static 'js/script.js'%}"></script>
+
+</body>
+
+</html>
